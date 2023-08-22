@@ -4,16 +4,19 @@ import Task from "../Task/Task";
 import "./Column.css";
 
 const Column = ({ state }) => {
-  const tasks = useStore(
-    (store) => console.log(store.task),
+  const tasks = useStore((store) =>
+    store.tasks.filter((task) => task.state === state)
   );
-  console.log(tasks)
+  const addTask = useStore((store) => store.addTask)
   return (
     <div className="column">
-      <p>{state}</p>
-      {/* {tasks.map((task) => (
+      <header className="title-wrapp">
+        <p>{state}</p>
+        <button onClick={()=>addTask("learn zustand" , state)}>Add</button>
+      </header>
+      {tasks.map((task) => (
         <Task title={task.title} key={task.title} />
-      ))} */}
+      ))}
     </div>
   );
 };

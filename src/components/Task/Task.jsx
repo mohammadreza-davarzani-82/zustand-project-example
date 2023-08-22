@@ -3,9 +3,9 @@ import "./Task.css";
 import PropTypes from "prop-types";
 import { useStore } from "../../zustand/store";
 const Task = ({ title }) => {
-    const  task = useStore((store)=>
-    store.tasks.find((task)=> task.title == title)
-    ) 
+    const task = useStore((store) =>
+    store.tasks.find((task) => task.title === title)
+  );
   return (
     <div className="task">
       <header>
