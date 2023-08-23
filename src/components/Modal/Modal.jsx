@@ -1,4 +1,6 @@
+import { Icon } from '@iconify/react';
 import PropTypes from "prop-types";
+
 import "./Modal.css";
 const Modal = ({ children, showModal , handleClose}) => {
   return (
@@ -8,6 +10,9 @@ const Modal = ({ children, showModal , handleClose}) => {
           <div className="modal-content">
             <header className="modal-header">
               <h2>Add Todo!</h2>
+              <button onClick={()=>handleClose(false)} className='modal-header-icon'>
+                <Icon   icon="fa:close" width="20" height="20" />
+              </button>
             </header>
             {children}
             <footer>

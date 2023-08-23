@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: space-between;
   font-weight: bold;
+  cursor: move;
 }
 .bottom-wrapp {
   display: flex;
@@ -19,7 +20,13 @@
   background: var(--COLOR-GRAY-LIGHT);
   border-radius: 4px;
 }
-
+.delete-icon {
+  color: rgb(231, 43, 43);
+  border: none;
+  margin: 0;
+  background: none;
+  cursor: pointer;
+}
 .PLANNED {
   background: var(--COLOR-GRAY-LIGHT);
 }

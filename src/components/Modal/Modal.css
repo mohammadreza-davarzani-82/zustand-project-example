@@ -26,12 +26,23 @@
 }
 .modal-header{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
 }
 .modal-header h2{
     display: flex;
     justify-content: start;
     align-items: start;
 
+}
+.modal-header-icon{
+    color: rgb(231, 43, 43);
+    border: none;
+    margin: 0;
+    background: none;
+    cursor: pointer;
 }
 .modal-close-button {
   color: white;
