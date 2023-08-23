@@ -5,9 +5,7 @@ import PropTypes from "prop-types";
 import "./Task.css";
 
 const Task = ({ title }) => {
-    const task = useStore((store) =>
-    store.tasks.find((task) => task.title === title)
-  );
+  const task = useStore((store) =>store.tasks.find((task) => task.title === title));
   const setDraggedTask = useStore((store)=>store.setDraggedTask)
   const deleteTask = useStore((store)=>store.deleteTask)
   return (

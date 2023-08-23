@@ -1,5 +1,6 @@
 .task {
   color: black;
+  margin: 10px 0;
   display: flex;
   padding: 0.5rem;
   min-height: 5rem;
